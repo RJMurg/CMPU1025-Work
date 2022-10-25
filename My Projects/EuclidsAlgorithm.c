@@ -2,7 +2,7 @@
     This is an attempted implementation
     of Euclid's Algorithm in C.
 
-    A: IrishTnT
+    A: Ruán Murgatroyd
     C. Date: 04/10/22
     U. Date: 12/10/22
 
@@ -41,7 +41,7 @@
 #include <math.h>
 
 /*
-It appears the way Michael Collins teaches functions is to write them after main().
+It appears the way my lecturer teaches functions is to write them after main().
 This is to aid readability, as main() is primary to any C program.
 As such, to make the compiler correctly read the code, you must declare the function
 before main() so it is not ignored. This does that.
