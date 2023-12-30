@@ -1,0 +1,27 @@
+Implement the Tower of Hanoi in pseudocode. You can find the rules of the game [here](https://en.wikipedia.org/wiki/Tower_of_Hanoi).
+
+[1]: https://en.wikipedia.org/wiki/Tower_of_Hanoi
+
+startProgram Hanoi
+    Towers = [[1, 2, 3], 
+    [],
+    []
+    ]
+
+    while Towers[1] != [1, 2, 3] and Towers[2] != [1, 2, 3]:
+        print(Towers)
+        print("Which tower do you want to move from?")
+        fromTower = input()
+        print("Which tower do you want to move to?")
+        toTower = input()
+        if Towers[fromTower] == []:
+            print("You can't move from an empty tower!")
+        elif Towers[toTower] == []:
+            Towers[toTower].append(Towers[fromTower].pop())
+        elif Towers[fromTower][-1] > Towers[toTower][-1]:
+            print("You can't move a larger disk onto a smaller disk!")
+        else:
+            Towers[toTower].append(Towers[fromTower].pop())
+    
+    print("You win!")
+endProgram
